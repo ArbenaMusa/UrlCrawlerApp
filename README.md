@@ -5,7 +5,7 @@
 ## Përshkrimi
 Zhvillimi i applikacionit që mundëson URL crawling
 
-###Teknologjia e përdorur
+### Teknologjia e përdorur
 * [Flask](http://flask.palletsprojects.com/en/1.1.x/) - Python web framework
 
 >Intalimi i librarive shtese si 'lxml' dhe 'request'
