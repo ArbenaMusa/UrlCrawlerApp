@@ -1,0 +1,87 @@
+@charset "UTF-8";
+@import "https://fonts.googleapis.com/css?family=Montserrat:700|Open+Sans:300,400|Pacifico";
+
+body {
+    padding-top: 6em;
+    background: #48494b
+}
+
+body, input, textarea {
+    background-color: #505458;
+    color: white;
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    font-size: 13pt;
+    font-weight: 300;
+    line-height: 1.65;
+}
+
+#header {
+    background: #262729;
+    cursor: default;
+    width: 100vw;
+    height: 10vh;
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: 10001;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.075);
+    text-align: left;
+}
+
+#header .pageName {
+    position: fixed;
+    color: white;
+    font-family: "Pacifico", cursive;
+    font-size: 5vh;
+    letter-spacing: 2px;
+    margin-top: 2px;
+    margin-left: 2vw;
+    display: inline-block;
+}
+
+#banner {
+    margin-top: -40px;
+    padding: 4.5vh;
+    height: 77vh;
+    background: #262729;
+    text-align: center;
+    border-radius: 12px;
+}
+
+button {
+    background-color: white;
+    border: none;
+    border-radius: 20px;
+    color: #48494b;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+input, button {
+    display: inline;
+}
+
+input {
+    background: transparent;
+    border-color: white;
+    border-radius: 8px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.inner-content {
+    overflow: auto;
+    margin-top: 8vh;
+    border-color: white;
+    border-radius: 10px;
+    height: 50vh;
+    width: auto;
+}

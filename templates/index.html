@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ title }}</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="/static/newStyle.css">
+</head>
+<body>
+<header id="header">
+    <div class="pageName">URL Crawling</div>
+</header>
+<section id="banner">
+    <div class="content">
+        <form action="/index.html" method="POST">
+            Insert your URL:
+            <input type="text" name="givenUrl">
+            Enter crawl depth:
+            <input type="number" name="givenDepth">
+            <button type="submit" value="Submit">Crawl</button>
+        </form>
+        <div class="inner-content">
+            {% if links %}
+                {% for i in range(0, len) %}
+                    <p>Depth {{ i }}</p>
+                    {{ links[i] }}<br>
+                {% endfor %}
+            {% endif %}
+        </div>
+    </div>
+</section>
+</body>
+</html>
